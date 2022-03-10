@@ -1,0 +1,132 @@
+.filter-wrapper {
+    display: flex;
+    margin: 15px 0;
+}
+.form-group {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+}
+
+html, body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    flex: 1 1 auto;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+    background-color: white;
+}
+#product-container {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+}
+
+#product {
+    padding: 20px;
+    display: flex;
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    flex: 0 0 auto;
+}
+#product img{
+    width: 300px;
+}
+
+pbody{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .app-container {
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .navigation {
+        min-height: auto;
+        flex: 0 0 35px;
+    }
+
+    .navigation a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .app-container {
+        width: 720px;
+    }
+
+    .content-container .card {
+        flex-basis: 330px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+
+    .app-container {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .container {
+        flex: 0 0 auto;
+        flex-direction: column;
+        width: calc(100% - 50px);
+    }
+
+    #product-container {
+        height: 50px;
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    .filter-wrapper {
+        flex-direction: row;
+        width: 300px;
+        display: flex;
+    }
+    .form-group{
+        display: inline-flex;
+        flex-direction: row;
+        margin: 66px 80px;
+        height: 25px;
+        text-overflow: ellipsis;
+    }
+    label {
+        padding: 10px;
+
+    }
+    .form-group select {
+        width: 500px;
+        overflow: hidden;
+        white-space: pre;
+        text-overflow: ellipsis;
+        -webkit-appearance: checkbox;
+    }
+
+
+
+    pbody{
+        display: flex;
+    }
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Product List for Project 1</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container" id="page-wrapper">
+
+    <div class="filter-wrapper">
+
+        <div class="form-group" style="margin-right: 20px;" >
+            <label for="orderBy" >Order By</label>
+            <select id="orderBy" name="orderBy">
+                <option value="name">Name</option>
+                <option value="_price">Price</option>
+            </select>
+
+            <br>
+
+            <label for="inStock">Show not in stock?</label>
+            <select id="inStock" name="inStock">
+                <option value="true">True</option>
+                <option value="false">False</option>
+
+            </select>
+            <br>
+        </div>
+    </div>
+
+    <div id="product-container" border="10">
+
+                <pbody></pbody>
+        </div>
+    </p>
+
+</div>
+
+<script type="text/javascript" src="productList.js"></script>
+</body>
+</html>
